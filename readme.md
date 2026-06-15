@@ -19,9 +19,6 @@
 
 ---
 
-## 🛠️ 環境需求與安裝
-
-在執行此網頁應用程式之前，請確保您的系統已安裝 Python 3.7+，並安裝以下必要套件：
 
 ```bash
 pip install pillow pillow-heif streamlit

@@ -1,25 +1,22 @@
+# HEIC to JPG Converter (Streamlit App) 📸
 
-***
+一個基於 Python 和 Streamlit 構建的輕量級網頁工具，可將 Apple 的 HEIC 格式圖片批量轉換為相容性更高的 JPG 格式，並支援壓縮打包下載。
 
-# 📸 HEIC 線上轉 JPG 工具 (HEIC to JPG Web Converter)
-
-這是一個基於 Python 與 Streamlit 開發的網頁版 HEIC 圖片轉換工具。原本的本地腳本需要透過終端機執行並直接修改本地資料夾，本專案將其轉換為直覺、美觀的網頁介面，支援**多檔案拖曳上傳**、**進度條顯示**，並能智慧識別上傳數量，提供**單圖直接下載**或**多圖打包成 ZIP 檔下載**。
-
----
-## link：https://heictojpg-kanmejwt9juzp5kgqjruzu.streamlit.app/
----
 ## ✨ 特色功能
 
-- **直覺網頁操作**：支援拖曳或點擊上傳 `.heic` (或 `.HEIC`) 格式的照片。
-- **批次處理**：可一次上傳多張照片，系統將自動依序處理。
-- **即時進度條**：清晰顯示目前的轉換進度與當前處理的檔名。
-- **安全免快取**：所有圖片轉換皆在記憶體 (`BytesIO`) 中暫存處理，不會將檔案寫入伺服器硬碟，保護隱私。
-- **智慧下載機制**：
-  - 上傳 **1 張** 照片：直接提供 `.jpg` 檔案下載。
-  - 上傳 **多張** 照片：自動打包成 `.zip` 壓縮檔，一鍵下載全部。
+- **批量轉換**：支援同時上傳多張 `.heic` 或 `.heif` 檔案。
+- **EXIF / 圖片相容性修復**：透過 `pillow-heif` 精準解碼，完美轉換為標準 JPG。
+- **一鍵打包**：轉換完成後，可直接將所有 JPG 檔案打包成一個 `.zip` 壓縮檔下載。
+- **直觀網頁介面**：基於 Streamlit 介面開發，無須指令操作，拖放即可完成。
 
 ---
 
+## 🚀 本地執行教學
+
+### 1. 複製儲存庫 (Clone)
+
+首先，將此專案複製到你的本地電腦：
 
 ```bash
-pip install pillow pillow-heif streamlit
+git clone [https://github.com/JAAAE/heic_to_jpg.git](https://github.com/JAAAE/heic_to_jpg.git)
+cd heic_to_jpg

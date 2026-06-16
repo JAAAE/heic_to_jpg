@@ -1,7 +1,7 @@
 # HEIC to JPG Converter (Streamlit App) 📸
 
 基於 Python 和 Streamlit 構建的輕量級網頁工具，可將 HEIC 格式圖片批量轉換為 JPG 格式，並支援壓縮打包下載。
-## Link：https://heictojpg-kanmejwt9juzp5kgqjruzu.streamlit.app/
+## Link：https://heictojpg-luo
 
 ## ✨ 特色
 
